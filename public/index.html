@@ -10,10 +10,19 @@
     <title>Board</title>
   </head>
   <body>
-    <input placeholder="추천할 노래 제목" />
-    <input placeholder="가수 이름" />
-    <input placeholder="추천 이유" />
-    <button>게시글 등록</button>
+    <script>
+      const insert = () => {
+        const songName = document.getElementById("song").value;
+        const singerName = document.getElementById("singer").value;
+        // const Content = document.getElementById("content").value;
+        alert(songName);
+        alert(singerName);
+      };
+    </script>
+    <input type="text" id="song" placeholder="추천할 노래 제목" />
+    <input type="text" id="singer" placeholder="가수 이름" />
+    <input type="text" it="content" placeholder="추천 이유" />
+    <button onclick="insert()">게시글 등록</button>
     <div>
       <table border="1">
         <tr>
